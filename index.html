@@ -1,121 +1,247 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Revenue Cycle Knowledge Bank by DJ</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <style>
-        body{
-            margin:0;
-            font-family:Arial, sans-serif;
-            background:#f4f7f9;
-        }
+<title>Revenue Cycle Knowledge Bank by DJ</title>
 
-        .hero{
-            background:#003B73;
-            color:white;
-            text-align:center;
-            padding:80px 20px;
-        }
+<style>
 
-        .hero h1{
-            font-size:48px;
-            margin-bottom:10px;
-        }
+body{
+margin:0;
+font-family:Arial,sans-serif;
+line-height:1.6;
+background:#f5f7fa;
+}
 
-        .hero p{
-            font-size:20px;
-        }
+header{
+background:#003B73;
+padding:20px;
+position:sticky;
+top:0;
+}
 
-        .section{
-            max-width:1200px;
-            margin:auto;
-            padding:50px 20px;
-        }
+nav{
+display:flex;
+justify-content:center;
+gap:30px;
+}
 
-        .card{
-            background:white;
-            padding:20px;
-            border-radius:10px;
-            box-shadow:0 2px 10px rgba(0,0,0,.1);
-            margin-bottom:20px;
-        }
+nav a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
 
-        h2{
-            color:#003B73;
-        }
+.hero{
+background:linear-gradient(135deg,#003B73,#00A6A6);
+color:white;
+text-align:center;
+padding:100px 25px;
+}
 
-        .footer{
-            background:#003B73;
-            color:white;
-            text-align:center;
-            padding:20px;
-        }
+.hero h1{
+font-size:50px;
+margin-bottom:10px;
+}
 
-        .button{
-            background:#F4B400;
-            color:#003B73;
-            padding:15px 25px;
-            text-decoration:none;
-            border-radius:6px;
-            font-weight:bold;
-            display:inline-block;
-            margin-top:20px;
-        }
-    </style>
+.hero p{
+font-size:22px;
+}
+
+.btn{
+background:#F4B400;
+color:#003B73;
+padding:15px 25px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+display:inline-block;
+margin-top:20px;
+}
+
+.section{
+max-width:1200px;
+margin:auto;
+padding:60px 20px;
+}
+
+h2{
+color:#003B73;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:12px;
+box-shadow:0 2px 8px rgba(0,0,0,.1);
+}
+
+.blog-card{
+background:white;
+padding:20px;
+border-left:5px solid #00A6A6;
+margin-bottom:15px;
+}
+
+footer{
+background:#003B73;
+color:white;
+text-align:center;
+padding:25px;
+margin-top:40px;
+}
+
+</style>
 </head>
 
 <body>
 
-<div class="hero">
-    <h1>Revenue Cycle Knowledge Bank by DJ</h1>
+<header>
+<nav>
+<a href="#about">About</a>
+ograms</a>
+<a hrefog</a>
+<a hrefcesResources</a>
+<a hreftContact</a>
+</nav>
+</header>
 
-    <p>
-        Learn • Improve • Lead
-    </p>
+<section class="hero">
 
-    <p>
-        Practical US Healthcare Revenue Cycle Management Training
-    </p>
+<h1>Revenue Cycle Knowledge Bank by DJ</h1>
 
-    #programsExplore Programs</a>
+<p>
+Empowering Healthcare Professionals Through Revenue Cycle Knowledge
+</p>
+
+<p>
+Learn • Improve • Lead
+</p>
+
+<a hrefmsExplore Programs</a>
+
+</section>
+
+<section class="section" id="about">
+
+<h2>About DJ</h2>
+
+<p>
+With over 15 years of experience in US Healthcare Revenue Cycle Management, this platform shares practical knowledge, operational excellence methodologies, Lean Six Sigma concepts, automation ideas, leadership lessons and career growth strategies.
+</p>
+
+</section>
+
+<section class="section" id="programs">
+
+<h2>Training Programs</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>RCM Fundamentals Masterclass</h3>
+<p>End-to-end Revenue Cycle Management training.</p>
 </div>
 
-<div class="section">
+<div class="card">
+<h3>AR Management Practitioner</h3>
+<p>Accounts Receivable and aging reduction strategies.</p>
+</div>
 
-    <h2>About</h2>
+<div class="card">
+<h3>Denial Management Certification</h3>
+<p>Denial prevention and appeals management.</p>
+</div>
 
-    <div class="card">
-        Revenue Cycle Knowledge Bank by DJ is a learning platform dedicated to sharing practical Revenue Cycle Management knowledge, Healthcare Operations excellence, Lean Six Sigma methodologies, Analytics, Automation and Leadership Development.
-    </div>
+<div class="card">
+<h3>Lean Six Sigma for Healthcare</h3>
+<p>Process excellence and continuous improvement.</p>
+</div>
 
-    <h2 id="programs">Training Programs</h2>
+<div class="card">
+<h3>AI & Automation in RCM</h3>
+<p>Learn how automation transforms healthcare operations.</p>
+</div>
 
-    <div class="card">
-        <h3>RCM Fundamentals Masterclass</h3>
-        <p>Learn the complete Revenue Cycle from Patient Registration to Revenue Recovery.</p>
-    </div>
-
-    <div class="card">
-        <h3>AR Management Practitioner Program</h3>
-        <p>Master Accounts Receivable management and aging reduction strategies.</p>
-    </div>
-
-    <div class="card">
-        <h3>Denial Management Certification</h3>
-        <p>Learn denial prevention, root cause analysis and appeals management.</p>
-    </div>
-
-    <div class="card">
-        <h3>Lean Six Sigma for Healthcare Operations</h3>
-        <p>Process improvement techniques for healthcare organizations.</p>
-    </div>
+<div class="card">
+<h3>RCM Leadership Program</h3>
+<p>Develop leadership capabilities for healthcare operations.</p>
+</div>
 
 </div>
 
-<div class="footer">
-    © 2026 Revenue Cycle Knowledge Bank by DJ
+</section>
+
+<section class="section" id="blog">
+
+<h2>RCM Insights Blog</h2>
+
+<div class="blog-card">
+<h3>Coming Soon</h3>
+<p>Your LinkedIn articles and RCM insights will be published here.</p>
 </div>
+
+<div class="blog-card">
+<h3>How to Reduce AR Aging</h3>
+<p>Future article placeholder.</p>
+</div>
+
+<div class="blog-card">
+<h3>Top Denial Management Strategies</h3>
+<p>Future article placeholder.</p>
+</div>
+
+<p>
+<a href="blog.html">View All Articles →</a>
+</p>
+
+</section>
+
+<section class="section" id="resources">
+
+<h2>Resources</h2>
+
+<ul>
+<li>SOP Templates</li>
+<li>RCM Checklists</li>
+<li>Denial Management Playbooks</li>
+<li>Lean Six Sigma Templates</li>
+<li>Operational KPI Dashboards</li>
+</ul>
+
+</section>
+
+<section class="section" id="contact">
+
+<h2>Contact</h2>
+
+<p>
+Interested in training, workshops or educational programs?
+</p>
+
+<p>
+Email: add-your-email-here
+</p>
+
+</section>
+
+<footer>
+
+© 2026 Revenue Cycle Knowledge Bank by DJ
+
+<br><br>
+
+Learn • Improve • Lead
+
+</footer>
 
 </body>
 </html>
