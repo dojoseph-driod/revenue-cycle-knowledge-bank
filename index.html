@@ -10,93 +10,221 @@
 
 body{
 margin:0;
-font-family:Arial,sans-serif;
+font-family:Arial, sans-serif;
 line-height:1.6;
 background:#f5f7fa;
+color:#222;
 }
 
 header{
-background:#003B73;
-padding:20px;
+background:white;
+padding:15px 30px;
 position:sticky;
 top:0;
+z-index:1000;
+box-shadow:0 2px 10px rgba(0,0,0,0.08);
 }
 
-nav{
+.navbar{
 display:flex;
-justify-content:center;
-gap:30px;
+align-items:center;
+justify-content:space-between;
+max-width:1200px;
+margin:auto;
+}
+
+.logo-area{
+display:flex;
+align-items:center;
+gap:12px;
+}
+
+.logo-area img{
+height:55px;
+width:auto;
+}
+
+.logo-text{
+font-weight:bold;
+color:#003B73;
+font-size:18px;
+line-height:1.2;
 }
 
 nav a{
-color:white;
+color:#003B73;
 text-decoration:none;
 font-weight:bold;
+margin-left:22px;
+}
+
+nav a:hover{
+color:#00A6A6;
 }
 
 .hero{
-background:linear-gradient(135deg,#003B73,#00A6A6);
+background:
+linear-gradient(rgba(0,59,115,0.82), rgba(0,166,166,0.78)),
+url("images/Designer (1).png");
+background-size:cover;
+background-position:center;
 color:white;
 text-align:center;
-padding:100px 25px;
+padding:120px 25px;
 }
 
 .hero h1{
-font-size:50px;
+font-size:52px;
 margin-bottom:10px;
 }
 
 .hero p{
 font-size:22px;
+max-width:850px;
+margin:12px auto;
 }
 
 .btn{
 background:#F4B400;
 color:#003B73;
-padding:15px 25px;
+padding:15px 26px;
 border-radius:8px;
 text-decoration:none;
 font-weight:bold;
 display:inline-block;
-margin-top:20px;
+margin-top:25px;
+}
+
+.btn:hover{
+background:#ffd45c;
 }
 
 .section{
 max-width:1200px;
 margin:auto;
-padding:60px 20px;
+padding:65px 20px;
 }
 
 h2{
 color:#003B73;
+font-size:34px;
+margin-bottom:15px;
+}
+
+h3{
+color:#003B73;
+}
+
+.about-grid{
+display:grid;
+grid-template-columns:1fr 2fr;
+gap:35px;
+align-items:center;
+}
+
+.profile-img{
+width:100%;
+max-width:280px;
+border-radius:18px;
+box-shadow:0 4px 16px rgba(0,0,0,0.15);
 }
 
 .cards{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:20px;
+gap:22px;
 }
 
 .card{
 background:white;
 padding:25px;
-border-radius:12px;
-box-shadow:0 2px 8px rgba(0,0,0,.1);
+border-radius:14px;
+box-shadow:0 2px 12px rgba(0,0,0,.09);
+border-top:5px solid #00A6A6;
+}
+
+.card:hover{
+transform:translateY(-4px);
+transition:0.2s;
+}
+
+.badge{
+display:inline-block;
+background:#F4B400;
+color:#003B73;
+padding:6px 12px;
+border-radius:20px;
+font-size:13px;
+font-weight:bold;
+margin-bottom:10px;
 }
 
 .blog-card{
 background:white;
-padding:20px;
-border-left:5px solid #00A6A6;
-margin-bottom:15px;
+padding:24px;
+border-left:6px solid #00A6A6;
+margin-bottom:18px;
+border-radius:10px;
+box-shadow:0 2px 10px rgba(0,0,0,.08);
+}
+
+.resources-list li{
+background:white;
+margin:10px 0;
+padding:15px;
+border-radius:8px;
+box-shadow:0 1px 6px rgba(0,0,0,.08);
+}
+
+.contact-box{
+background:#003B73;
+color:white;
+padding:35px;
+border-radius:18px;
+}
+
+.contact-box h2{
+color:white;
 }
 
 footer{
 background:#003B73;
 color:white;
 text-align:center;
-padding:25px;
+padding:30px;
 margin-top:40px;
+}
+
+footer img{
+height:55px;
+margin-bottom:10px;
+}
+
+@media(max-width:768px){
+
+.navbar{
+flex-direction:column;
+gap:15px;
+}
+
+nav a{
+display:inline-block;
+margin:8px;
+}
+
+.hero h1{
+font-size:36px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+.about-grid{
+grid-template-columns:1fr;
+text-align:center;
+}
+
 }
 
 </style>
@@ -105,13 +233,25 @@ margin-top:40px;
 <body>
 
 <header>
+<div class="navbar">
+
+<div class="logo-area">
+images/Designer.png
+<div class="logo-text">
+Revenue Cycle<br>
+Knowledge Bank by DJ
+</div>
+</div>
+
 <nav>
-<a href="#about">About</a>
-<a href="#programs">Programs</a>
-<a href="blog">Blog</a>
-<a href="#resources">Resources</a>
-<a href="#contact">Contact</a>
+index.html#aboutAbout</a>
+index.html#programsPrograms</a>
+<a href="blog.html">Blog</a>
+index.html#resourcesResources</a>
+index.html#contactContact</a>
 </nav>
+
+</div>
 </header>
 
 <section class="hero">
@@ -119,14 +259,14 @@ margin-top:40px;
 <h1>Revenue Cycle Knowledge Bank by DJ</h1>
 
 <p>
-Empowering Healthcare Professionals Through Revenue Cycle Knowledge
+Empowering Healthcare Professionals Through Practical Revenue Cycle Knowledge
 </p>
 
 <p>
 Learn • Improve • Lead
 </p>
 
-<a href="#programs">Explore Programs</a>
+#programsExplore Training Programs</a>
 
 </section>
 
@@ -134,9 +274,28 @@ Learn • Improve • Lead
 
 <h2>About DJ</h2>
 
+<div class="about-grid">
+
+<div>
+images/dj-photo.jpg
+</div>
+
+<div>
 <p>
-With over 15 years of experience in US Healthcare Revenue Cycle Management, this platform shares practical knowledge, operational excellence methodologies, Lean Six Sigma concepts, automation ideas, leadership lessons and career growth strategies.
+Revenue Cycle Knowledge Bank by DJ is a practical learning platform focused on US Healthcare Revenue Cycle Management, operational excellence, analytics, automation, Lean Six Sigma, AR management, denial prevention and leadership development.
 </p>
+
+<p>
+The goal of this platform is to simplify complex RCM concepts and convert real-world healthcare operations experience into useful learning content for professionals, team leaders, managers and organizations looking to strengthen revenue cycle capabilities.
+</p>
+
+<p>
+This website will also serve as a knowledge hub where LinkedIn posts, RCM insights, blog articles, templates and training resources can be organized in one place.
+</p>
+
+</div>
+
+</div>
 
 </section>
 
@@ -144,36 +303,58 @@ With over 15 years of experience in US Healthcare Revenue Cycle Management, this
 
 <h2>Training Programs</h2>
 
+<p>
+Explore structured learning programs designed for healthcare RCM professionals at different stages of their career.
+</p>
+
 <div class="cards">
 
 <div class="card">
+<span class="badge">Beginner Friendly</span>
 <h3>RCM Fundamentals Masterclass</h3>
-<p>End-to-end Revenue Cycle Management training.</p>
+<p>Learn the complete Revenue Cycle from patient registration, insurance verification, claims submission, payment posting, AR follow-up, denial management and revenue recovery.</p>
 </div>
 
 <div class="card">
-<h3>AR Management Practitioner</h3>
-<p>Accounts Receivable and aging reduction strategies.</p>
+<span class="badge">Operations Focused</span>
+<h3>AR Management Practitioner Program</h3>
+<p>Master Accounts Receivable inventory management, aging reduction, payer follow-up, productivity tracking, escalation controls and collection improvement strategies.</p>
 </div>
 
 <div class="card">
+<span class="badge">Certification</span>
 <h3>Denial Management Certification</h3>
-<p>Denial prevention and appeals management.</p>
+<p>Learn denial categories, root cause analysis, appeal preparation, prevention frameworks, payer-specific challenges and denial resolution best practices.</p>
 </div>
 
 <div class="card">
-<h3>Lean Six Sigma for Healthcare</h3>
-<p>Process excellence and continuous improvement.</p>
+<span class="badge">Process Excellence</span>
+<h3>Lean Six Sigma for Healthcare Operations</h3>
+<p>Apply Lean Six Sigma, VSM, RCA, waste reduction, COPQ and continuous improvement concepts to healthcare revenue cycle workflows.</p>
 </div>
 
 <div class="card">
+<span class="badge">Future Ready</span>
 <h3>AI & Automation in RCM</h3>
-<p>Learn how automation transforms healthcare operations.</p>
+<p>Explore automation opportunities, AI-assisted workflows, productivity improvements, reporting automation and practical healthcare operations use cases.</p>
 </div>
 
 <div class="card">
-<h3>RCM Leadership Program</h3>
-<p>Develop leadership capabilities for healthcare operations.</p>
+<span class="badge">Leadership</span>
+<h3>RCM Leadership Development Program</h3>
+<p>Develop communication, coaching, performance management, stakeholder handling, quality improvement and change leadership skills for RCM operations.</p>
+</div>
+
+<div class="card">
+<span class="badge">Analytics</span>
+<h3>Healthcare Analytics & KPI Masterclass</h3>
+<p>Learn KPI design, dashboard thinking, Excel reporting, Power BI fundamentals, productivity monitoring, quality reporting and executive storytelling.</p>
+</div>
+
+<div class="card">
+<span class="badge">Flagship Program</span>
+<h3>Revenue Cycle Excellence Academy™</h3>
+<p>A complete learning pathway covering RCM, AR operations, denial management, analytics, Lean Six Sigma, automation and leadership development.</p>
 </div>
 
 </div>
@@ -185,23 +366,27 @@ With over 15 years of experience in US Healthcare Revenue Cycle Management, this
 <h2>RCM Insights Blog</h2>
 
 <div class="blog-card">
-<h3>Coming Soon</h3>
-<p>Your LinkedIn articles and RCM insights will be published here.</p>
-</div>
-
-<div class="blog-card">
-<h3>How to Reduce AR Aging</h3>
-<p>Future article placeholder.</p>
-</div>
-
-<div class="blog-card">
-<h3>Top Denial Management Strategies</h3>
-<p>Future article placeholder.</p>
-</div>
-
+<h3>Welcome to Revenue Cycle Knowledge Bank</h3>
 <p>
-<a href="blog.html">View All Articles →</a>
+This blog will include practical RCM insights, LinkedIn articles, healthcare operations lessons, automation ideas, denial management strategies, AR improvement methods and leadership learning content.
 </p>
+</div>
+
+<div class="blog-card">
+<h3>Future Article: How to Reduce AR Aging</h3>
+<p>
+A practical guide for improving AR follow-up, prioritizing inventory and reducing aging exposure.
+</p>
+</div>
+
+<div class="blog-card">
+<h3>Future Article: Top Denial Management Strategies</h3>
+<p>
+A structured approach to denial prevention, RCA, appeals and payer-specific controls.
+</p>
+</div>
+
+<a href="blog.html" class="btn">View All Articles</a>
 
 </section>
 
@@ -209,37 +394,55 @@ With over 15 years of experience in US Healthcare Revenue Cycle Management, this
 
 <h2>Resources</h2>
 
-<ul>
-<li>SOP Templates</li>
-<li>RCM Checklists</li>
+<p>
+Future downloadable resources and learning aids can be added here.
+</p>
+
+<ul class="resources-list">
+<li>RCM SOP Templates</li>
+<li>AR Follow-up Checklists</li>
 <li>Denial Management Playbooks</li>
-<li>Lean Six Sigma Templates</li>
-<li>Operational KPI Dashboards</li>
+<li>Root Cause Analysis Templates</li>
+<li>Lean Six Sigma Healthcare Tools</li>
+<li>Operational KPI Dashboard Ideas</li>
+<li>Training and Career Development Guides</li>
 </ul>
 
 </section>
 
 <section class="section" id="contact">
 
+<div class="contact-box">
+
 <h2>Contact</h2>
 
 <p>
-Interested in training, workshops or educational programs?
+Interested in RCM training, learning programs, workshops or educational resources?
 </p>
 
 <p>
-Email: rcmkbank.training@gmail.com
+Email: add-your-email-here
 </p>
+
+<p>
+LinkedIn: Add your LinkedIn page link here
+</p>
+
+</div>
 
 </section>
 
 <footer>
 
+images/logo.png
+
+<p>
 © 2026 Revenue Cycle Knowledge Bank by DJ
+</p>
 
-<br><br>
-
+<p>
 Learn • Improve • Lead
+</p>
 
 </footer>
 
